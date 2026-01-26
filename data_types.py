@@ -9,3 +9,7 @@ print(type(x))
 #3
 x = {"name" : "John", "age" : 36}
 print(x)
+
+#4
+x = True
+print(type(x))
