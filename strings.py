@@ -6,3 +6,7 @@ print(x)
 x = "Hello"
 y = "World"
 print(x + " " + y)
+
+#3
+x = "Hello"
+print(type(x))
