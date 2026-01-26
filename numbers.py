@@ -23,3 +23,16 @@ z = -5j
 print(type(x))
 print(type(y))
 print(type(z))
+
+#4
+x = 10     # int
+y = float(x) # int → float 10.0
+z = complex(x)  # int → complex 10 +0j
+
+print(x)
+print(y)
+print(z)
+
+print(type(x))
+print(type(y))
+print(type(z))
