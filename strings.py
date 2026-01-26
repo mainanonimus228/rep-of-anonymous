@@ -15,3 +15,7 @@ print(type(x))
 x = "Hello"
 print(x[0])   # первая буква
 print(x[1])   # вторая буква
+
+#5
+x = "Hello World"
+print(len(x))
