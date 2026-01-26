@@ -13,3 +13,7 @@ print(x)
 #4
 x = True
 print(type(x))
+
+#5
+x = bool(5)
+print(x)
