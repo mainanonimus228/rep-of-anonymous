@@ -1,28 +1,32 @@
+
 #1
+x = 5
+y = 3
 
-print(10 > 9)
-print(10 == 9)
-print(10 < 9)
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
 
-#2
+#2 Chaining Comparison Operators
+x = 5
 
-a = 200
-b = 33
+print(1 < x < 10)
 
-if b > a:
-  print("b is greater than a")
-else:
-  print("b is not greater than a")
+print(1 < x and x < 10)
 
 #3
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
 
-print(bool("Hello")) #TRUE
-print(bool(15))
+print(x is z)
+print(x is y)
+print(x == y)
 
 #4
+fruits = ["apple", "banana", "cherry"]
 
-x = "Hello"
-y = 15
-
-print(bool(x))
-print(bool(y))
+print("banana" in fruits)
