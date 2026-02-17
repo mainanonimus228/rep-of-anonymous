@@ -15,7 +15,7 @@ for x in array:
 
 count = 0
 for x in freq:
-    if freq[x] >= 3:
+    if freq[x] == 3:
         count += 1
 
 print(count)

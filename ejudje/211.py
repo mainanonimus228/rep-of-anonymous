@@ -10,5 +10,3 @@ nums[fiind-1:seind] = reversed(nums[fiind-1:seind])
 
 for i in range(n):
     print(nums[i], end =" ")
-
-

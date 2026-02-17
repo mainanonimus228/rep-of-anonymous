@@ -1,43 +1,19 @@
-# 1. Простейший Lambda
-def lambda_handler(event, context):
-    return {
-        "statusCode": 200,
-        "body": "Hello, AWS Lambda!"
-    }
+#1
 
-# 2. Lambda с параметром из event
-def greet_handler(event, context):
-    name = event.get("name", "World")
-    return {
-        "statusCode": 200,
-        "body": f"Hello, {name}!"
-    }
+x = lambda a : a + 10
+print(x(5))
 
-# 3. Lambda с математической операцией
-def sum_handler(event, context):
-    a = event.get("a", 0)
-    b = event.get("b", 0)
-    return {
-        "statusCode": 200,
-        "body": str(a + b)
-    }
+#2
 
-# 4. Lambda с использованием переменной окружения
-import os
+x = lambda a, b : a * b
+print(x(5, 6))
 
-def env_handler(event, context):
-    stage = os.environ.get("STAGE", "dev")
-    return {
-        "statusCode": 200,
-        "body": f"Stage: {stage}"
-    }
+#3
 
-# 5. Lambda с обработкой ошибки
-def safe_divide_handler(event, context):
-    try:
-        a = event.get("a", 1)
-        b = event.get("b", 1)
-        result = a / b
-        return {"statusCode": 200, "body": str(result)}
-    except ZeroDivisionError:
-        return {"statusCode": 400, "body": "Division by zero error"}
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+#4
+
+def myfunc(n):
+  return lambda a : a * n
